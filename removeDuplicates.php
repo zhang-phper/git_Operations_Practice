@@ -6,7 +6,7 @@ function removeDuplicates($nums) {
         return;
         
     $i = 0;
-    for ($j = 0; $j < count($nums); $j++) {
+    for ($j = 1; $j < count($nums); $j++) {
         if ($nums[$j] != $nums[$i]) {
             $i++;
             $nums[$i] = $nums[$j];
