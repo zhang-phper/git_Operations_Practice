@@ -2,6 +2,8 @@
 function removeDuplicates($nums) {
     if (!is_array($nums))
         return;
+    if (count($nums) <= 0)
+        return;
         
     $i = 0;
     for ($j = 0; $j < count($nums); $j++) {
