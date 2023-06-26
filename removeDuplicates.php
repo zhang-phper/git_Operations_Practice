@@ -1,5 +1,8 @@
 <?php
 function removeDuplicates($nums) {
+    if (!is_array($nums))
+        return;
+        
     $i = 0;
     for ($j = 0; $j < count($nums); $j++) {
         if ($nums[$j] != $nums[$i]) {
